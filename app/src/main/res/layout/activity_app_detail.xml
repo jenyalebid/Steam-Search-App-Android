@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/steam_header"
+    tools:context=".AppDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/game_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading Name"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Price:"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+                <TextView
+                    android:id="@+id/game_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+
+            </LinearLayout>
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/short_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:text="Loading Description"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8sp"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:id="@+id/trailer_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/steam_background"
+                android:textSize="24dp"
+                android:text="Trailer" />
+
+            <Button
+                android:id="@+id/steam_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View On Steam"
+                android:paddingVertical="10dp"
+                android:textSize="24dp"
+                android:backgroundTint="@color/steam_background"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/developers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Loading Developers"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8sp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/publishers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Loading Publishers"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8sp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/long_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:text="Loading Description"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8sp"
+                android:drawablePadding="8dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

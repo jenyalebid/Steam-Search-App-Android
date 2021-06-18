@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/wish"
+        android:title="Wishlist"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_wish"/>
+
+    <item
+        android:id="@+id/featured_i"
+        android:title="Featured"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_featured"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_search"/>
+</menu>

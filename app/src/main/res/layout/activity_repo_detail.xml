@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".AppDetailActivity">
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Name"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?attr/textAppearanceHeadline3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Price:"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"/>
+
+        <TextView
+            android:id="@+id/game_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$59"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?attr/textAppearanceHeadline4"/>
+
+
+    </LinearLayout>
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slide"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true"
+        android:layout_marginBottom="10dp">
+
+    </com.smarteist.autoimageslider.SliderView>
+
+    <TextView
+        android:id="@+id/short_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:text="Short Description"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="8dp"/>
+
+
+
+    <Button
+        android:id="@+id/steam_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View On Steam"
+        android:paddingVertical="10dp"
+        android:textSize="24dp"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/fav_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Favourites"
+        android:paddingVertical="10dp"
+        android:textSize="24dp"/>
+
+</LinearLayout>
